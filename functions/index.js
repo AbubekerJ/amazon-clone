@@ -106,7 +106,7 @@ app.post("/accept-payment", async (req, res) => {
       phone_number: phone_number,
       tx_ref: tx_ref,
       currency: currency, // Include currency in the request body
-      return_url: "http://localhost:3000/", // Set your return URL
+      return_url: "https://kenash-market-790c0.web.app/", // Set your return URL
     };
 
     const response = await fetch("https://api.chapa.co/v1/transaction/initialize", {
